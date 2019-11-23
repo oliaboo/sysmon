@@ -1,24 +1,18 @@
 # Description
-On Linux, it is hard to find how much memory (RAM) in human readble format (kilobytes/KB) each of the running processes are using. ps command displays memory usage in percentage not in bytes/KB/MB. I wrote this script just to do that. 
-
-Currently it shows the memory usage in only kilobytes and in descending order in a tabular format. The shell script don't accept any flags or option. But this is just the beginning. It is possible to add more features and flags to configure the output of `sysmon`. I will look into that in future if you guys find it useful.
-
-
+The script shows top 10 processes by memory usage as well as top 10 processes by CPU usage 
 
 # Usage
 Clone the GitHub repository:
 
 `$ git clone https://github.com/shovon8/sysmon.git`
 
-Move the shell script to any directory in the PATH. I prefer the `/usr/bin` directory.
+Make sysmon executable:
 
-`$ sudo mv sysmon/sysmon /usr/bin`
+`chmod +x sysmon/sysmon`
 
-Now run `sysmon` as follows:
+Run `sysmon`:
 
-`$ sudo sysmon`
-
-That's it.
+`$ sysmon/sysmon`
 
 
 
